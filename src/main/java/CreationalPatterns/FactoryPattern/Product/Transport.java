@@ -1,4 +1,4 @@
-package CreationalPatterns.AbstractFactoryPatterns.Product;
+package CreationalPatterns.FactoryPattern.Product;
 
 // product
 public interface Transport {

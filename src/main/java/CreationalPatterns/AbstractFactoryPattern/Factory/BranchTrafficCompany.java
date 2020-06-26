@@ -1,7 +1,7 @@
-package CreationalPatterns.AbstractFactoryPatterns.Factory;
+package CreationalPatterns.AbstractFactoryPattern.Factory;
 
-import CreationalPatterns.AbstractFactoryPatterns.Product.Driver;
-import CreationalPatterns.AbstractFactoryPatterns.Product.Transport;
+import CreationalPatterns.AbstractFactoryPattern.Product.Driver;
+import CreationalPatterns.AbstractFactoryPattern.Product.Transport;
 
 // factory
 public abstract class BranchTrafficCompany {

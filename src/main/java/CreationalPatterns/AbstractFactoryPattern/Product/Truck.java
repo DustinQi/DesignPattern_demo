@@ -1,4 +1,4 @@
-package CreationalPatterns.AbstractFactoryPatterns.Product;
+package CreationalPatterns.AbstractFactoryPattern.Product;
 
 // concrete product 1
 public class Truck implements Transport {

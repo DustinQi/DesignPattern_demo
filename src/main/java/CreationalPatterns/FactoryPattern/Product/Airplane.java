@@ -1,4 +1,4 @@
-package CreationalPatterns.FactoryPatterns.Product;
+package CreationalPatterns.FactoryPattern.Product;
 
 // concrete product 1
 public class Airplane implements Transport{

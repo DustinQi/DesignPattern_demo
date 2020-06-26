@@ -1,9 +1,9 @@
-package CreationalPatterns.AbstractFactoryPatterns.Factory;
+package CreationalPatterns.AbstractFactoryPattern.Factory;
 
-import CreationalPatterns.AbstractFactoryPatterns.Product.AirplaneDriver;
-import CreationalPatterns.AbstractFactoryPatterns.Product.Driver;
-import CreationalPatterns.AbstractFactoryPatterns.Product.Transport;
-import CreationalPatterns.AbstractFactoryPatterns.Product.Truck;
+import CreationalPatterns.AbstractFactoryPattern.Product.AirplaneDriver;
+import CreationalPatterns.AbstractFactoryPattern.Product.Driver;
+import CreationalPatterns.AbstractFactoryPattern.Product.Transport;
+import CreationalPatterns.AbstractFactoryPattern.Product.Truck;
 
 // concrete factory 1
 public class GroundTrafficCompany extends BranchTrafficCompany {

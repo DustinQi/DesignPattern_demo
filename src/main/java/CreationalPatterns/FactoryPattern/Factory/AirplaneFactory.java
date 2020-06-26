@@ -1,7 +1,7 @@
-package CreationalPatterns.FactoryPatterns.Factory;
+package CreationalPatterns.FactoryPattern.Factory;
 
-import CreationalPatterns.FactoryPatterns.Product.Airplane;
-import CreationalPatterns.FactoryPatterns.Product.Transport;
+import CreationalPatterns.FactoryPattern.Product.Airplane;
+import CreationalPatterns.FactoryPattern.Product.Transport;
 
 // concrete factory 2
 public class AirplaneFactory extends TransportFactory{

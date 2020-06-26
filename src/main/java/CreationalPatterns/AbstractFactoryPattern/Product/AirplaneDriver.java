@@ -1,4 +1,4 @@
-package CreationalPatterns.AbstractFactoryPatterns.Product;
+package CreationalPatterns.AbstractFactoryPattern.Product;
 
 public class AirplaneDriver implements Driver {
     public AirplaneDriver(){

@@ -1,6 +1,6 @@
-package CreationalPatterns.FactoryPatterns.Factory;
+package CreationalPatterns.FactoryPattern.Factory;
 
-import CreationalPatterns.FactoryPatterns.Product.Transport;
+import CreationalPatterns.FactoryPattern.Product.Transport;
 
 // factory
 public abstract class TransportFactory {

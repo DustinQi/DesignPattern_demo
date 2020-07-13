@@ -1,39 +1,38 @@
 package CreationalPatterns.BuilderPattern;
 
-import CreationalPatterns.BuilderPattern.Builder.Builder;
-import CreationalPatterns.BuilderPattern.Builder.HeavyTruckBuilder;
-import CreationalPatterns.BuilderPattern.Builder.SportCarBuilder;
-import CreationalPatterns.BuilderPattern.Product.HeavyTruck;
-import CreationalPatterns.BuilderPattern.Product.SportCar;
+import CreationalPatterns.BuilderPattern.Builder.*;
+import CreationalPatterns.BuilderPattern.Product.Posche;
+import CreationalPatterns.BuilderPattern.Product.Wuling;
 
-// 生成器模式client
+/**
+ * 获得一辆汽车（具体产品），客户需要主管和具体生成器，无需知道生产汽车的具体过程和细节
+ */
 public class client {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         /**
-         * 获取主管类（“拿起生成器说明书”）
-          */
-        Director director = new Director();
-
-        /**
-         * 制造超跑
+         * 获取主管类（“拿起生成器说明书并操作生成器”）
          */
-        Builder sportCarBuilder = new SportCarBuilder();
-        // 主管类操作跑车生成器，在生成超跑前先进行一些安装工作
-        director.produceSportCar(sportCarBuilder);
-        // 设置完成后，生产超跑
-        SportCar sportCar = (SportCar) sportCarBuilder.getAutoMobile();
-        // 查看超跑成品
-        sportCar.info();
-
+        CarDirector director = new CarDirector();
         /**
-         * 制造卡车
+         * 制造保时捷
          */
-        Builder heavyTruckBuilder = new HeavyTruckBuilder();
-        // 主管类操作卡车生成器，在生成卡车前先进行一些安装工作
-        director.produceHeavyTruck(heavyTruckBuilder);
-        // 设置完成后，生产卡车
-        HeavyTruck heavyTruck = (HeavyTruck) heavyTruckBuilder.getAutoMobile();
-        // 查看超跑成品
-        heavyTruck.info();
+        PoscheBuilder poscheBuilder = new PoscheBuilder();
+        // 主管类操作保时捷生成器，在生成卡车前先进行一些安装工作
+        director.producePosche(poscheBuilder);
+        // 设置完成后，生产我的保时捷
+        Posche myPosche = (Posche) poscheBuilder.getCar();
+        // 查看保时捷成品
+        myPosche.info();
+        /**
+         * 制造五菱宏光
+         */
+        WulingBuilder wulingBuilder = new WulingBuilder();
+        // 主管类操作五菱宏光生成器，在生成卡车前先进行一些安装工作
+        director.produceWuling(wulingBuilder);
+        // 设置完成后，生产你的五菱宏光
+        Wuling yourWuling = (Wuling) wulingBuilder.getCar();
+        // 查看五菱宏光成品
+        yourWuling.info();
+
     }
 }
